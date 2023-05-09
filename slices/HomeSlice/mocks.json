@@ -1,0 +1,20 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"hometext": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Commodo deserunt sit velit ea officia laboris irure laborum excepteur do. Do in cillum ullamco duis anim nisi excepteur."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

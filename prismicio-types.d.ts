@@ -153,6 +153,92 @@ export type AllDocumentTypes =
   | PageDocument
   | SettingsDocument;
 /**
+ * Primary content in About → Primary
+ *
+ */
+interface AboutSliceDefaultPrimary {
+  /**
+   * About Text field in *About → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about.primary.about_text
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  about_text: prismicT.RichTextField;
+}
+/**
+ * Default variation for About Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type AboutSliceDefault = prismicT.SharedSliceVariation<
+  "default",
+  Simplify<AboutSliceDefaultPrimary>,
+  never
+>;
+/**
+ * Slice variation for *About*
+ *
+ */
+type AboutSliceVariation = AboutSliceDefault;
+/**
+ * About Shared Slice
+ *
+ * - **API ID**: `about`
+ * - **Description**: `About`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type AboutSlice = prismicT.SharedSlice<"about", AboutSliceVariation>;
+/**
+ * Primary content in Demo → Primary
+ *
+ */
+interface DemoSliceDefaultPrimary {
+  /**
+   * Info Text field in *Demo → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: demo.primary.info_text
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  info_text: prismicT.RichTextField;
+}
+/**
+ * Default variation for Demo Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Default`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type DemoSliceDefault = prismicT.SharedSliceVariation<
+  "default",
+  Simplify<DemoSliceDefaultPrimary>,
+  never
+>;
+/**
+ * Slice variation for *Demo*
+ *
+ */
+type DemoSliceVariation = DemoSliceDefault;
+/**
+ * Demo Shared Slice
+ *
+ * - **API ID**: `demo`
+ * - **Description**: `Demo`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type DemoSlice = prismicT.SharedSlice<"demo", DemoSliceVariation>;
+/**
  * Primary content in Hero → Primary
  *
  */
@@ -695,6 +781,14 @@ declare module "@prismicio/client" {
       SettingsDocumentData,
       SettingsDocument,
       AllDocumentTypes,
+      AboutSliceDefaultPrimary,
+      AboutSliceDefault,
+      AboutSliceVariation,
+      AboutSlice,
+      DemoSliceDefaultPrimary,
+      DemoSliceDefault,
+      DemoSliceVariation,
+      DemoSlice,
       HeroSliceDefaultPrimary,
       HeroSliceDefault,
       HeroSliceVariation,

@@ -1,0 +1,20 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"info_text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Eu elit labore in dolor aliqua. Minim magna duis cupidatat ex do reprehenderit aliqua officia veniam cupidatat id."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

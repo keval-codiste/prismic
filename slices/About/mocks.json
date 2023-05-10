@@ -1,0 +1,20 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"about_text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Deserunt cupidatat aliquip magna anim. Exercitation cupidatat nisi aute sint dolor eu. Commodo eu aliquip consequat laborum pariatur."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]
